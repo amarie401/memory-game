@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background: white;
+    margin: 0;
+}
+
+header {
+    background: $tundora;
+
+    h1 {
+        text-align: center;
+        color: $white;
+        font-family: 'Barrio', sans-serif;
+    }
+
+    .time {
+        text-align: center;
+        color: $white;
+        font-family: 'Bahiana', sans-serif;
+    }
+}
+
+.container {
+    margin: 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    height: 200px;
+    width: 150px;
+    background: $portGore;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 9px 15px 7px $mainRGBA;
+
+    p {
+        font-size: 48px;
+        color: $white;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    &&:hover {
+        cursor: pointer;
+        border: 3px solid $secondRGBA;
+    }
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Barrio");
+@import url("https://fonts.googleapis.com/css?family=Bahiana");
+@import url("https://fonts.googleapis.com/css?family=Bahiana|Ubuntu");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background: white;
+  margin: 0; }
+
+header {
+  background: #443C3C; }
+
+h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Barrio', sans-serif; }
+
+.time {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Bahiana', sans-serif; }
+
+.container {
+  margin: 45px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.card {
+  margin: 10px;
+  height: 200px;
+  width: 150px;
+  background: #1F1C44;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 9px 15px 7px rgba(55, 29, 101, 0.43); }
+
+.card:hover {
+  cursor: pointer;
+  border: 3px solid rgba(255, 0, 0, 0.71); }
+
+.card p {
+  font-size: 48px;
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif; }
+
+.is-hidden {
+  display: none; }
