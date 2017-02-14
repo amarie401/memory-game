@@ -70,7 +70,6 @@
 
         function displayTime() { // display current time
             const timeSpan = document.querySelector('.timer');
-            let time = new Date();
             let currentTime = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
             timeSpan.innerHTML = currentTime;
         }
