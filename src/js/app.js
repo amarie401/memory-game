@@ -8,7 +8,8 @@
                 app.shuffle();
             },
 
-            shuffle: function() { // shuffle cards
+            // shuffle cards
+            shuffle: function() {
                 let random = 0;
                 let temp = 0;
                 for (let i = 1; i < app.cards.length; i++) {
@@ -17,24 +18,26 @@
                     app.cards[i] = app.cards[random];
                     app.cards[random] = temp;
                 }
-                // console.log(app.cards);
                 app.assignCards();
             },
 
-            assignCards: function() { // assign cards
+            // Assign Cards
+            assignCards: function() {
                 $('.card').each(function(index) {
                     $(this).attr('data-card-value', app.cards[index]);
                 });
                 app.bindEvents();
             },
 
-            bindEvents: function() { // bind events
+            // Bind Events
+            bindEvents: function() {
                 $('.card').on('click', function() {
                     $(this).html('<p>' + $(this).data('cardValue') + '</p>').addClass('selected');
                     app.checkMatch();
                 });
             },
 
+            // Check for a match
             checkMatch: function() { // check for a match
                 if ($('.selected').length === 2) {
                     if ($('.selected').first().data('cardValue') == $('.selected').last().data('cardValue')) {
@@ -57,10 +60,10 @@
                 }
             },
 
-
-            checkWin: function() { // check for win
+            // Check for a win
+            checkWin: function() {
                 if ($('.unmatched').length === 0) {
-                    $('.container').html('<h1>Congratulations!</h1>');
+                    $('.container').html('<h1>Meowulations!</h1>');
                     window.reload();
                 }
             }
@@ -68,6 +71,7 @@
 
         app.init();
 
+        // Display time
         function displayTime() { // display current time
             const timeSpan = document.querySelector('.timer');
             let currentTime = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");

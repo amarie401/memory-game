@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.time {
+    p {
+        font-size: 30px;
+    }
+}
+
 body {
     font-size: 16px;
     line-height: 1.6;
@@ -10,7 +16,7 @@ body {
 }
 
 header {
-    background: $tundora;
+    background: rgb(15, 12, 26);
 
     h1 {
         text-align: center;
@@ -29,25 +35,26 @@ header {
     margin: 45px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     margin: 10px;
     height: 200px;
     width: 150px;
-    background: $portGore;
+    background: url('https://a.wattpad.com/useravatar/CatScratch57.256.501400.jpg');
     text-align: center;
     border-radius: 5px;
     box-shadow: 9px 15px 7px $mainRGBA;
 
     p {
-        font-size: 48px;
-        color: $white;
+        font-size: 55px;
+        color: black;
         font-family: 'Ubuntu', sans-serif;
     }
 
-    &&:hover {
+    &:hover {
         cursor: pointer;
-        border: 3px solid $secondRGBA;
+        border: 5px solid $tundora;
     }
 }

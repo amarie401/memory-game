@@ -4,6 +4,9 @@
 * {
   box-sizing: border-box; }
 
+.time p {
+  font-size: 30px; }
+
 body {
   font-size: 16px;
   line-height: 1.6;
@@ -11,40 +14,37 @@ body {
   margin: 0; }
 
 header {
-  background: #443C3C; }
-
-h1 {
-  text-align: center;
-  color: #FFFFFF;
-  font-family: 'Barrio', sans-serif; }
-
-.time {
-  text-align: center;
-  color: #FFFFFF;
-  font-family: 'Bahiana', sans-serif; }
+  background: #0f0c1a; }
+  header h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Barrio', sans-serif; }
+  header .time {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Bahiana', sans-serif; }
 
 .container {
   margin: 45px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .card {
   margin: 10px;
   height: 200px;
   width: 150px;
-  background: #1F1C44;
+  background: url("https://a.wattpad.com/useravatar/CatScratch57.256.501400.jpg");
   text-align: center;
   border-radius: 5px;
   box-shadow: 9px 15px 7px rgba(55, 29, 101, 0.43); }
-
-.card:hover {
-  cursor: pointer;
-  border: 3px solid rgba(255, 0, 0, 0.71); }
-
-.card p {
-  font-size: 48px;
-  color: #FFFFFF;
-  font-family: 'Ubuntu', sans-serif; }
+  .card p {
+    font-size: 55px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif; }
+  .card:hover {
+    cursor: pointer;
+    border: 5px solid #443C3C; }
 
 .is-hidden {
   display: none; }
